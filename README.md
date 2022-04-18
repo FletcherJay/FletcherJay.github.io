@@ -1,2 +1,2 @@
-# FletcherJay.github.io
+# fletcherjay.github.io
 Personal Site
