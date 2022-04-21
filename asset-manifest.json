@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/repository-name/static/css/main.99efafff.css",
-    "main.js": "/repository-name/static/js/main.b5759c85.js",
-    "static/js/787.20c4f088.chunk.js": "/repository-name/static/js/787.20c4f088.chunk.js",
-    "static/media/Bonsai.JPG": "/repository-name/static/media/Bonsai.df7c293973cb93f1e1e5.JPG",
-    "index.html": "/repository-name/index.html",
-    "main.99efafff.css.map": "/repository-name/static/css/main.99efafff.css.map",
-    "main.b5759c85.js.map": "/repository-name/static/js/main.b5759c85.js.map",
-    "787.20c4f088.chunk.js.map": "/repository-name/static/js/787.20c4f088.chunk.js.map"
+    "main.css": "/FletcherJay/FletcherJay.github.io/static/css/main.99efafff.css",
+    "main.js": "/FletcherJay/FletcherJay.github.io/static/js/main.a8cb29f2.js",
+    "static/js/787.20c4f088.chunk.js": "/FletcherJay/FletcherJay.github.io/static/js/787.20c4f088.chunk.js",
+    "static/media/Bonsai.JPG": "/FletcherJay/FletcherJay.github.io/static/media/Bonsai.df7c293973cb93f1e1e5.JPG",
+    "index.html": "/FletcherJay/FletcherJay.github.io/index.html",
+    "main.99efafff.css.map": "/FletcherJay/FletcherJay.github.io/static/css/main.99efafff.css.map",
+    "main.a8cb29f2.js.map": "/FletcherJay/FletcherJay.github.io/static/js/main.a8cb29f2.js.map",
+    "787.20c4f088.chunk.js.map": "/FletcherJay/FletcherJay.github.io/static/js/787.20c4f088.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.99efafff.css",
-    "static/js/main.b5759c85.js"
+    "static/js/main.a8cb29f2.js"
   ]
 }
