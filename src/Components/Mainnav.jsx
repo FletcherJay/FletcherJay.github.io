@@ -2,12 +2,13 @@ import React from 'react'
 import { Navbar, NavDropdown, Nav } from 'react-bootstrap'
 import { Container } from 'react-bootstrap'
 import { Form, FormControl, Button  } from 'react-bootstrap'
+import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 
 function Mainnav() {
   return (
     <div>
-      <Navbar bg="light" expand="lg" fixed="top">
+      <Navbar bg="dark" expand="lg" fixed="top" variant="dark">
         <Container fluid>
           <Navbar.Brand href="#">Fletcher Johnson</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
@@ -18,26 +19,17 @@ function Mainnav() {
               navbarScroll
             >
               <Nav.Link href="#action1">Home</Nav.Link>
-              <Nav.Link href="#action2">Resume</Nav.Link>
-              <NavDropdown title="Link" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">GitHub</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">Stack Overflow</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Youtube
-                </NavDropdown.Item>
-              </NavDropdown>
+              <Nav.Link href="#action1">Contact</Nav.Link>
+              <Button variant="outline-success">Resume</Button>
+              
+              <Nav.Link href="#action1"><FaTwitter/></Nav.Link>
+              <Nav.Link href="#action1"><FaGithub/></Nav.Link>
+              <Nav.Link href="#action1"><FaLinkedin/></Nav.Link>
 
             </Nav>
-            <Form className="d-flex">
-              <FormControl
-                type="search"
-                placeholder="Search"
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button variant="outline-success">Search</Button>
-            </Form>
+            
+              
+            
           </Navbar.Collapse>
         </Container>
       </Navbar>

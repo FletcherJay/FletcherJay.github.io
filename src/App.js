@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Projectcard from './Components/Projectcard';
 import Bonsai from './Components/Bonsai';
 import Typewriter from './Components/Typewriter';
+import Techstack from './Components/Techstack';
 const App = () => {
 
 
@@ -14,7 +15,7 @@ const App = () => {
       <Bonsai/>
       
       <Mainnav/>
-      <div className="img-txt-wrapper">
+      <div className="typewriter-location">
         <h1
           style={{ paddingTop: "5rem", margin: "auto 0", fontWeight: "normal" }}
         >
@@ -33,7 +34,7 @@ const App = () => {
       </div>
       
 
-      
+      <Techstack/>
       <Projectcard/>
     </div>
   );
