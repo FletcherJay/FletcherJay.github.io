@@ -1,11 +1,8 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import { Card, CardGroup, Button } from 'react-bootstrap'
 import Bonsai from '../Bonsai.JPG'
-import { useState } from 'react'
-import { useRef } from 'react'
 const Projectcard = () => {
-    const [show, setShow] = useState(false);
-    const target = useRef(null);
+  
 
   return (
     <div>
@@ -20,16 +17,9 @@ const Projectcard = () => {
       </Card.Text>
     </Card.Body>
       <div>
-      <Button ref={target} onClick={() => setShow(!show)}>
-        Click me!
-      </Button>
-      <Overlay target={target.current} show={show} placement="right">
-        {(props) => (
-          <Tooltip id="overlay-example" {...props}>
-            My Tooltip
-          </Tooltip>
-        )}
-      </Overlay>
+        <Button href="#" variant="secondary" size="sm">
+          Demo
+        </Button>{' '}
         <Button href="https://www.konaorchidsociety.org/" target="_blank" variant="secondary" size="sm">
           Live Site
         </Button>{' '}
@@ -85,7 +75,6 @@ const Projectcard = () => {
 
     </div>
   )
-
 }
-render(<Projectcard />);
+
 export default Projectcard
