@@ -77,7 +77,7 @@ const Projectcard = () => {
       <Overlay target={target.current} show={show} placement="right">
         {(props) => (
           <video src={ScrumDemo} width="750" height="500" controls{...props}>
-            My Tooltip
+            
           </video>
         )}
       </Overlay>
