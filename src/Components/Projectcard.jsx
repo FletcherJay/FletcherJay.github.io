@@ -3,16 +3,17 @@ import { Card, CardGroup, Button } from 'react-bootstrap'
 import Bonsai from '../Bonsai.JPG'
 import Kosheader from "../screencapture-konaorchidsociety-org-2022-04-22-11_58_52 (2).png"
 import { Popover } from 'bootstrap'
-import { OverlayTrigger, Overlay, Tooltip } from 'react-bootstrap'
+import { OverlayTrigger, Overlay, Tooltip, Modal } from 'react-bootstrap'
 import { render } from '@testing-library/react'
 import Kindex from "../Aurora_Kp_Map_North_America.gif"
 import Scrumholder from "../Scrum-app-holder.png"
 import ScrumDemo from "../2022-04-24 13-57-09.mp4"
 import demoKoa from "../screencapture-konaorchidsociety-org-2022-04-22-11_58_52.png"
+
 const Projectcard = () => {
   const [show, setShow] = useState(false);
   const target = useRef(null);
-
+  const [lgShow, setLgShow] = useState(false);
   return (
     <div>
     
@@ -33,16 +34,26 @@ const Projectcard = () => {
     </Card.Body>
       <div>
       <>
-      <Button ref={target} onClick={() => setShow(!show)} variant="secondary" size="sm">
+      <Button  onClick={() => setLgShow(true)} variant="secondary" size="sm">
         Demo
       </Button>{' '}
-      <Overlay target={target.current} show={show} placement="right">
-        {(props) => (
-          <Card.Img src={demoKoa}  {...props}>
-           
-          </Card.Img>
-        )}
-      </Overlay>
+     
+          <Modal 
+          size="lg"
+          show={lgShow}
+          onHide={() => setLgShow(false)}
+          aria-labelledby="example-modal-sizes-title-lg"
+          >
+            
+              <Modal.Header closeButton>
+              <Modal.Body>
+                <Card.Img src={demoKoa} ></Card.Img>
+              </Modal.Body>
+              </Modal.Header>
+            
+          </Modal>
+       
+     
     </>
         <Button href="https://www.konaorchidsociety.org/" target="_blank" variant="secondary" size="sm">
           Live Site
