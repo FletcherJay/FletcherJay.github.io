@@ -6,6 +6,8 @@ import Projectcard from './Components/Projectcard';
 import Bonsai from './Components/Bonsai';
 import Typewriter from './Components/Typewriter';
 import Techstack from './Components/Techstack';
+import Contactform from './Components/Contactform';
+import Footer from './Components/Footer';
 const App = () => {
 
 
@@ -36,6 +38,8 @@ const App = () => {
 
       <Techstack/>
       <Projectcard/>
+      <Contactform/>
+      <Footer/>
     </div>
   );
 }

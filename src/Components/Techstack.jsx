@@ -7,7 +7,7 @@ import { DiVisualstudio } from "react-icons/di";
 const Techstack = () => {
   return (
     <div>
-    <Card bg="success"  text="dark">
+    <Card bg="success"  text="dark" style={{ borderRadius: '0px' }}>
 
       <Card.Body>
         <h5>SKILLS & TOOLS</h5>

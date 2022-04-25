@@ -20,7 +20,7 @@ function Mainnav() {
             >
               <Nav.Link href="#action1">Home</Nav.Link>
               <Nav.Link href="#action1">Contact</Nav.Link>
-              <Button variant="outline-success">Resume</Button>
+              <Button href="#action1" target="_blank" variant="outline-success" >Resume</Button>
               
               <Nav.Link href="#action1"><FaTwitter/></Nav.Link>
               <Nav.Link href="#action1"><FaGithub/></Nav.Link>

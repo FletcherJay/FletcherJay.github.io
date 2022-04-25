@@ -1,25 +1,28 @@
-import React from 'react'
+import { React, useState, useRef } from 'react'
 import { Card, CardGroup, Button } from 'react-bootstrap'
 import Bonsai from '../Bonsai.JPG'
 import Kosheader from "../screencapture-konaorchidsociety-org-2022-04-22-11_58_52 (2).png"
 import { Popover } from 'bootstrap'
-import { OverlayTrigger } from 'react-bootstrap'
+import { OverlayTrigger, Overlay, Tooltip } from 'react-bootstrap'
 import { render } from '@testing-library/react'
 import Kindex from "../Aurora_Kp_Map_North_America.gif"
 import Scrumholder from "../Scrum-app-holder.png"
+import ScrumDemo from "../2022-04-24 13-57-09.mp4"
+import demoKoa from "../screencapture-konaorchidsociety-org-2022-04-22-11_58_52.png"
 const Projectcard = () => {
-
+  const [show, setShow] = useState(false);
+  const target = useRef(null);
 
   return (
     <div>
     
-      <Card bg="dark" text="light">
-        <Card.Title><h1>Project Ccatalog</h1>
+      <Card bg="dark" text="light" style={{ borderRadius: '0px' }}>
+        <Card.Title><h1>Portfolio</h1>
         </Card.Title>
       </Card>
       
       <CardGroup >
-  <Card bg="dark" text="light">
+  <Card bg="dark" text="light" style={{ borderRadius: '0px' }}>
 
     <Card.Img variant="top" src={Kosheader} />
     <Card.Body>
@@ -29,16 +32,23 @@ const Projectcard = () => {
       </Card.Text>
     </Card.Body>
       <div>
-        <Button href="#" variant="secondary" size="sm">
-          Demo
-        </Button>{' '}
+      <>
+      <Button ref={target} onClick={() => setShow(!show)} variant="secondary" size="sm">
+        Demo
+      </Button>{' '}
+      <Overlay target={target.current} show={show} placement="right">
+        {(props) => (
+          <Card.Img src={demoKoa}  {...props}>
+           
+          </Card.Img>
+        )}
+      </Overlay>
+    </>
         <Button href="https://www.konaorchidsociety.org/" target="_blank" variant="secondary" size="sm">
           Live Site
         </Button>{' '}
       </div>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
+
   </Card>
   <Card bg="dark" text="light">
     <Card.Img variant="top" src={Scrumholder} />
@@ -49,18 +59,25 @@ const Projectcard = () => {
       </Card.Text>
     </Card.Body>
     <div>
-        <Button href="#" variant="secondary" size="sm">
-          Demo
-        </Button>{' '}
+    <>
+      <Button ref={target} onClick={() => setShow(!show)} variant="secondary" size="sm">
+        Demo
+      </Button>{' '}
+      <Overlay target={target.current} show={show} placement="right">
+        {(props) => (
+          <video src={ScrumDemo} width="750" height="500" controls{...props}>
+            My Tooltip
+          </video>
+        )}
+      </Overlay>
+    </>
         <Button href="https://github.com/FletcherJay/Scrum-React" target="_blank" variant="secondary" size="sm">
           View Code
         </Button>{' '}
       </div>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
+
   </Card>
-  <Card bg="dark" text="light">
+  <Card bg="dark" text="light" style={{ borderRadius: '0px' }}>
     <Card.Img variant="top" src={Kindex} />
     <Card.Body>
       <Card.Title>Nasa Api</Card.Title>
@@ -76,9 +93,7 @@ const Projectcard = () => {
           View Code
         </Button>{' '}
       </div>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
+
   </Card>
 </CardGroup>
 
