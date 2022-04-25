@@ -6,14 +6,15 @@ import { Popover } from 'bootstrap'
 import { OverlayTrigger, Overlay, Tooltip, Modal } from 'react-bootstrap'
 import { render } from '@testing-library/react'
 import Kindex from "../Aurora_Kp_Map_North_America.gif"
-import Scrumholder from "../Scrum-app-holder.png"
+import Scrumholder from "../scrumapp.png"
 import ScrumDemo from "../2022-04-24 13-57-09.mp4"
 import demoKoa from "../screencapture-konaorchidsociety-org-2022-04-22-11_58_52.png"
-
+import Nasavid from "../2022-04-25 12-53-26.mp4"
 const Projectcard = () => {
   const [show, setShow] = useState(false);
   const target = useRef(null);
   const [lgShow, setLgShow] = useState(false);
+  const [smShow, setSmShow] = useState(false);
   return (
     <div>
     
@@ -97,9 +98,26 @@ const Projectcard = () => {
       </Card.Text>
     </Card.Body>
     <div>
-        <Button href="#" variant="secondary" size="sm">
-          Demo
-        </Button>{' '}
+    <Button  onClick={() => setSmShow(true)} variant="secondary" size="sm">
+        Demo
+      </Button>{' '}
+     
+          <Modal 
+          size="lg"
+          show={smShow}
+          onHide={() => setSmShow(false)}
+          aria-labelledby="example-modal-sizes-title-lg"
+          >
+            
+              <Modal.Header closeButton>
+              <Modal.Body>
+              <video src={Nasavid} width="750" height="500" controls>
+            
+            </video>
+              </Modal.Body>
+              </Modal.Header>
+            
+          </Modal>
         <Button href="https://github.com/FletcherJay/NASA-API-bot" target="_blank" variant="secondary" size="sm">
           View Code
         </Button>{' '}
