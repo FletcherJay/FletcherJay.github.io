@@ -67,7 +67,7 @@ const Projectcard = () => {
     <Card.Body>
       <Card.Title>Scrum App</Card.Title>
       <Card.Text>
-        This project helped me learn about how dynamic react could be especially if you utalize its amazing library, and its amazing developer following.{' '}
+        This project helped me learn about how dynamic react could be especially if you utalize its amazing library, and its amazing developer following. Also became really helpfull for me to narrow down what to do and when to do it while building this site.{' '}
       </Card.Text>
     </Card.Body>
     <div>

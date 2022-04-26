@@ -1,13 +1,13 @@
 .typewriter-location {
   position: absolute;
-  left: 3rem;
-  bottom: 15rem;
+  left:9vh;
+  bottom: 25vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   height: 100%;
-  text-align: center;
+  text-align: left;
   padding-left: 100px;
   padding-right: 100px;
 }

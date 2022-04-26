@@ -1,9 +1,10 @@
 import React from 'react'
-import { Container, Form,Card } from 'react-bootstrap'
+import { Container, Form,Card, Button } from 'react-bootstrap'
 
 const Contactform = () => {
   return (
     <Card bg="dark" text="light" style={{ borderRadius: '0px' }}>
+    <a id="Contact"></a>
     <Container >
       <Form ><h1>Contact Me</h1>
         <Form.Group controlId="form.Name">
@@ -19,6 +20,9 @@ const Contactform = () => {
             <Form.Control as="textarea" rows={3} />
         </Form.Group>
       </Form>
+      <Button variant="success" type="submit" >
+    Send
+  </Button>
     </Container>
     </Card>
   )
