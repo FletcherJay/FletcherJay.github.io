@@ -77,9 +77,11 @@ const Projectcard = () => {
       </Button>{' '}
       <Overlay target={target.current} show={show} placement="right">
         {(props) => (
-          <video src={ScrumDemo} width="750" height="500" controls{...props}>
-            
-          </video>
+          <div className="ratio ratio-16x9">
+            <video src={ScrumDemo} controls{...props}>
+              
+            </video>
+          </div>
         )}
       </Overlay>
     </>
@@ -111,9 +113,11 @@ const Projectcard = () => {
             
               <Modal.Header closeButton>
               <Modal.Body>
-              <video src={Nasavid} width="750" height="500" controls>
-            
-            </video>
+                <div className="ratio ratio-16x9">
+                  <iframe src={Nasavid} controls>
+              
+                  </iframe>
+                </div>
               </Modal.Body>
               </Modal.Header>
             
