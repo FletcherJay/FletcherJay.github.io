@@ -10,11 +10,11 @@ const Techstack = () => {
     <div>
     <CardGroup>
     <Card bg="success" style={{ borderRadius: '0px' }}>
-  <Card.Img variant="top" src={myPic} style={{borderRadius: '100%', width: "20%"}} />
+  
   <Card.Body>
     <Card.Title>Who's this guy?</Card.Title>
     <Card.Text>
-      Im a Front-End Developer that uses React living in Kailua-Kona, HI.
+      Im a Front-End Developer that uses React to build things that I find cool.
       I have a serious passion for software development and growing my knowledge base this field.
     </Card.Text>
     <Button variant="dark">Contact</Button>
