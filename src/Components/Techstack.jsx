@@ -1,20 +1,34 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
+import { Card, CardGroup } from 'react-bootstrap'
 import { FaReact, FaJs, FaBootstrap, FaWordpress, FaGitAlt, FaGithub, FaTerminal, FaLinux, FaHtml5,FaCss3Alt, FaCogs } from "react-icons/fa";
 import { Container,Row, Col } from 'react-bootstrap';
 import { DiVisualstudio } from "react-icons/di";
-
+import { Button } from 'react-bootstrap';
+import myPic from "../DSCF0253 (3) - Copy.JPG"
 const Techstack = () => {
   return (
     <div>
+    <CardGroup>
+    <Card bg="success" style={{ borderRadius: '0px' }}>
+  <Card.Img variant="top" src={myPic} style={{borderRadius: '100%', width: "20%"}} />
+  <Card.Body>
+    <Card.Title>Who's this guy?</Card.Title>
+    <Card.Text>
+      Im a Front-End Developer that uses React living in Kailua-Kona, HI.
+      I have a serious passion for software development and growing my knowledge base this field.
+    </Card.Text>
+    <Button variant="dark">Contact</Button>
+  </Card.Body>
+</Card>
     <Card bg="success"  text="dark" style={{ borderRadius: '0px' }}>
-
+      
       <Card.Body>
         <h5>SKILLS & TOOLS</h5>
         <h3>My Toolbox & Things I Can Do</h3>
+         
         <div>
           <Container>
-            
+          
               <Row>
                 <Col>
                   <h1><FaReact/></h1>
@@ -40,7 +54,7 @@ const Techstack = () => {
                   <h1><FaGithub/></h1>
                     <p>Github</p>
                 </Col>
-
+    
               </Row>
               <Row>
               <Col>
@@ -64,12 +78,23 @@ const Techstack = () => {
                   <h1><FaLinux/></h1>
                     <p>Linux</p>
                 </Col>
+                
               </Row>
             
           </Container>
+          
+       
+        
         </div>
       </Card.Body>
-    </Card></div>
+    </Card>
+    
+          
+        
+
+
+    </CardGroup>
+    </div>
   )
 }
 
