@@ -1,15 +1,12 @@
 import { React, useState, useRef } from 'react'
 import { Card, CardGroup, Button } from 'react-bootstrap'
-import Bonsai from '../Bonsai.JPG'
-import Kosheader from "../screencapture-konaorchidsociety-org-2022-04-22-11_58_52 (2).png"
-import { Popover } from 'bootstrap'
-import { OverlayTrigger, Overlay, Tooltip, Modal } from 'react-bootstrap'
-import { render } from '@testing-library/react'
-import Kindex from "../Aurora_Kp_Map_North_America.gif"
-import Scrumholder from "../scrumapp.png"
-import ScrumDemo from "../2022-04-24 13-57-09.mp4"
-import demoKoa from "../screencapture-konaorchidsociety-org-2022-04-22-11_58_52.png"
-import Nasavid from "../2022-04-25 12-53-26.mp4"
+import Kosheader from "../Media/screencapture-konaorchidsociety-org-2022-04-22-11_58_52 (2).png"
+import { Overlay,  Modal } from 'react-bootstrap'
+import Kindex from "../Media/Aurora_Kp_Map_North_America.gif"
+import Scrumholder from "../Media/scrumapp.png"
+import ScrumDemo from "../Media/2022-04-24 13-57-09.mp4"
+import demoKoa from "../Media/screencapture-konaorchidsociety-org-2022-04-22-11_58_52.png"
+import Nasavid from "../Media/2022-04-25 12-53-26.mp4"
 const Projectcard = () => {
   const [show, setShow] = useState(false);
   const target = useRef(null);
@@ -17,7 +14,6 @@ const Projectcard = () => {
   const [smShow, setSmShow] = useState(false);
   return (
     <div>
-    
       <Card bg="dark" text="light" style={{ borderRadius: '0px' }}>
         <Card.Title><h1>Portfolio</h1>
         </Card.Title>

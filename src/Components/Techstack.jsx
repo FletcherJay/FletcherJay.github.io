@@ -4,13 +4,12 @@ import { FaReact, FaJs, FaBootstrap, FaWordpress, FaGitAlt, FaGithub, FaTerminal
 import { Container,Row, Col } from 'react-bootstrap';
 import { DiVisualstudio } from "react-icons/di";
 import { Button } from 'react-bootstrap';
-import myPic from "../DSCF0253 (3) - Copy.JPG"
 const Techstack = () => {
   return (
     <div>
     <CardGroup>
     <Card bg="success" style={{ borderRadius: '0px' }}>
-  
+ 
   <Card.Body>
     <Card.Title>Who's this guy?</Card.Title>
     <Card.Text>

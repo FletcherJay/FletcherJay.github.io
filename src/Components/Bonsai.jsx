@@ -1,5 +1,5 @@
 import React from 'react'
-import BonsaiPic from '../Bonsai.JPG'
+import BonsaiPic from '../Media/Bonsai.JPG'
 import { Card } from 'react-bootstrap'
 const Bonsai = () => {
 
