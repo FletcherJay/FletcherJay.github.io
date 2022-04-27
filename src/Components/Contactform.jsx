@@ -25,29 +25,23 @@ const Contactform = () => {
   };
 
   return (
-    <Card bg="dark" text="light" style={{ borderRadius: '0px' }}>
-    <a id="Contact"></a>
-    <Container >
-      <Form onSubmit={handleSubmit} ><h1>Contact Me</h1>
-        <Form.Group controlId="form.Name">
-            <Form.Label htmlFor="name">Name</Form.Label>
-            <Form.Control type="text" placeholder="Enter name" required/>
-        </Form.Group>
-        <Form.Group controlId="form.Email">
-            <Form.Label htmlFor="email">Email address</Form.Label>
-            <Form.Control type="email" placeholder="name@example.com" required/>
-        </Form.Group>
-        <Form.Group controlId="form.Textarea">
-            <Form.Label htmlFor="message">Message</Form.Label>
-            <Form.Control as="textarea" rows={3} required/>
-        </Form.Group>
-      </Form>
-      <Button variant="success" type="submit" >
-        {status}
-      </Button>
-    </Container>
-    </Card>
-  )
+    <form onSubmit={handleSubmit}>
+    <div>
+      <label htmlFor="name">Name:</label>
+      <input type="text" id="name" required />
+    </div>
+    <div>
+      <label htmlFor="email">Email:</label>
+      <input type="email" id="email" required />
+    </div>
+    <div>
+      <label htmlFor="message">Message:</label>
+      <textarea id="message" required />
+    </div>
+    <button type="submit">{status}</button>
+  </form>
+);
+  
 }
 
 export default Contactform
