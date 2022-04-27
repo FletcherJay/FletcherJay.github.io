@@ -31,15 +31,15 @@ const Contactform = () => {
       <Form onSubmit={handleSubmit} ><h1>Contact Me</h1>
         <Form.Group controlId="form.Name">
             <Form.Label htmlFor="name">Name</Form.Label>
-            <Form.Control type="text" placeholder="Enter name" required/>
+            <Form.Control type="text" placeholder="Enter name" id="name" required/>
         </Form.Group>
         <Form.Group controlId="form.Email">
             <Form.Label htmlFor="email">Email address</Form.Label>
-            <Form.Control type="email" placeholder="name@example.com" required/>
+            <Form.Control type="email" placeholder="name@example.com" id="email"  required/>
         </Form.Group>
         <Form.Group controlId="form.Textarea">
             <Form.Label htmlFor="message">Message</Form.Label>
-            <Form.Control as="textarea" rows={3} required/>
+            <Form.Control as="textarea" rows={3} id="message" required/>
         </Form.Group>
       </Form>
       <Button variant="success" type="submit" >
