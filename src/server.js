@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
-const { createTestAccount } = require("nodemailer");
 
 const app = express();
 app.use(cors());
@@ -13,8 +12,8 @@ app.listen(5000, () => console.log("Server Running"));
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: testAccount.user,
-    pass: testAccount.pass,
+    user: "fletcherjay.dev@gmail.com",
+    pass: "Atigdng179078",
   },
 });
 
