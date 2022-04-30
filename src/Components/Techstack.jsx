@@ -16,6 +16,10 @@ const Techstack = () => {
       Im a Front-End Developer that uses React to build things that I find cool.
       I have a serious passion for software development and growing my knowledge base this field.
     </Card.Text>
+    <Card.Title>Heres the Why</Card.Title>
+    <Card.Text>
+      It started when covid hit the world and my perception of in person jobs changed. So I looked for types of work that wasnt location based in any way. I tried programming with python and realized that everything i was looking to build reqired Javascript, and from then on I loved programming.
+    </Card.Text>
     <Button variant="dark">Contact</Button>
   </Card.Body>
 </Card>

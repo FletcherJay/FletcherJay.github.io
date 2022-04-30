@@ -3,7 +3,7 @@ import { Navbar, NavDropdown, Nav } from 'react-bootstrap'
 import { Container } from 'react-bootstrap'
 import { Form, FormControl, Button  } from 'react-bootstrap'
 import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
-import rtf from "../Media/WebDev_Resume.rtf"
+import rtf from "../Media/Fletchers-Resume.pdf"
 
 
 function Mainnav() {
