@@ -22,8 +22,6 @@ function Mainnav() {
               <Nav.Link href="#">Home</Nav.Link>
               <Nav.Link href="#Contact">Contact</Nav.Link>
               <Button href={rtf} target="_blank" variant="outline-success" without rel="noopener noreferrer">Resume</Button>
-              
-              <Nav.Link href="https://twitter.com/FletchMeister96" target="_blank"><FaTwitter/></Nav.Link>
               <Nav.Link href="https://github.com/FletcherJay" target="_blank"><FaGithub/></Nav.Link>
               <Nav.Link href="https://www.linkedin.com/in/fletcher-johnson-ba0254111/" target="_blank"><FaLinkedin/></Nav.Link>
 

@@ -2,11 +2,11 @@ import { React, useState, useRef } from 'react'
 import { Card, CardGroup, Button } from 'react-bootstrap'
 import Kosheader from "../Media/screencapture-konaorchidsociety-org-2022-04-22-11_58_52 (2).png"
 import { Overlay,  Modal } from 'react-bootstrap'
-import Kindex from "../Media/Aurora_Kp_Map_North_America.gif"
+import Kindex from "../Media/nasaReact.png"
 import Scrumholder from "../Media/scrumapp.png"
 import ScrumDemo from "../Media/2022-04-24 13-57-09.mp4"
 import demoKoa from "../Media/screencapture-konaorchidsociety-org-2022-04-22-11_58_52.png"
-import Nasavid from "../Media/2022-04-25 12-53-26.mp4"
+import Nasavid from "../Media/2022-05-17 15-45-37.mp4"
 const Projectcard = () => {
   const [show, setShow] = useState(false);
   const target = useRef(null);
@@ -92,7 +92,7 @@ const Projectcard = () => {
     <Card.Body>
       <Card.Title>Nasa Api</Card.Title>
       <Card.Text>
-        This project I learned a ton about how APi's work and my DOM manipulation skills were put to the test.
+        This project I learned a ton about how APi's work in React. In this project I use <b>six different API fetch requests</b>, the background picture changes daily with its description at bottom of picture, the latest solar events from NASA's  Space Weather Database Of Notifications, then I also gather the latest Nasa project ID's then map through those and query those projects individually, and finally I show the latest patent created by NASA at the very bottom of the page.
       </Card.Text>
     </Card.Body>
     <div>
