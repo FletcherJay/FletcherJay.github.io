@@ -4,7 +4,7 @@ import Kosheader from "../Media/screencapture-konaorchidsociety-org-2022-04-22-1
 import { Overlay,  Modal } from 'react-bootstrap'
 import Kindex from "../Media/nasaReact.png"
 import Scrumholder from "../Media/scrumapp.png"
-import ScrumDemo from "../Media/2022-04-24 13-57-09.mp4"
+import ScrumDemo from "../Media/2022-05-22 17-27-25.mp4"
 import demoKoa from "../Media/screencapture-konaorchidsociety-org-2022-04-22-11_58_52.png"
 import Nasavid from "../Media/2022-05-17 15-45-37.mp4"
 const Projectcard = () => {
@@ -12,6 +12,8 @@ const Projectcard = () => {
   const target = useRef(null);
   const [lgShow, setLgShow] = useState(false);
   const [smShow, setSmShow] = useState(false);
+  const [scrumShow, setScrumShow] = useState(false);
+  
   return (
     <div>
       <Card bg="dark" text="light" style={{ borderRadius: '0px' }}>
@@ -68,18 +70,27 @@ const Projectcard = () => {
     </Card.Body>
     <div>
     <>
-      <Button ref={target} onClick={() => setShow(!show)} variant="secondary" size="sm">
+      <Button  onClick={() => setScrumShow(true)} variant="secondary" size="sm">
         Demo
       </Button>{' '}
-      <Overlay target={target.current} show={show} placement="right">
-        {(props) => (
-          <div className="ratio ratio-16x9">
-            <video src={ScrumDemo} controls{...props}>
+      <Modal 
+          size="lg"
+          show={scrumShow}
+          onHide={() => setScrumShow(false)}
+          aria-labelledby="example-modal-sizes-title-lg"
+          >
+            
+              <Modal.Header closeButton>
+              <Modal.Body>
+                <div className="ratio ratio-16x9">
+                  <iframe src={ScrumDemo} controls>
               
-            </video>
-          </div>
-        )}
-      </Overlay>
+                  </iframe>
+                </div>
+              </Modal.Body>
+              </Modal.Header>
+            
+          </Modal>
     </>
         <Button href="https://github.com/FletcherJay/Scrum-React" target="_blank" variant="secondary" size="sm">
           View Code
